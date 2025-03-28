@@ -1,9 +1,4 @@
-button {
-  position: absolute;
-  bottom: 20px; /* Adjust spacing from the bottom */
-  left: 50%;
-  transform: translateX(-50%); /* Centers the button horizontally */
-}
+/* Style for tooltip elements */
 .tooltiptext {
   visibility: hidden;
   background-color: black;
@@ -26,25 +21,7 @@ button {
   visibility: visible;
 }
 
-/* Make inputs appear below labels */
-label {
-  display: block;
-  margin-bottom: 5px; /* Adds spacing between label and input */
-}
-
-/*BOTTOM OF THE SHEET, AND UNDERNEATH/*
-
-
-
-
-
-
-/* Make inputs appear below labels */
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
+/* General inputs and selects styling */
 input,
 select {
   display: block;
@@ -53,7 +30,7 @@ select {
   margin-bottom: 15px;
 }
 
-/* Bottom section to align at the bottom of the page */
+/* Bottom section alignment */
 .bottom-section {
   position: absolute;
   bottom: 10px;
@@ -63,11 +40,65 @@ select {
   gap: 20px; /* Space between page indicator and button */
 }
 
-.page-indicator {
-  margin: 0;
-}
-
 button {
+  position: absolute;
+  bottom: 20px; /* Adjust spacing from the bottom */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the button horizontally */
   padding: 10px 20px;
   cursor: pointer;
+}
+
+/* Styling for question groups */
+.question-group {
+  border: 1px solid #ccc; /* Light gray border */
+  padding: 15px; /* Add padding inside the box */
+  margin-bottom: 20px; /* Space between question groups */
+  border-radius: 8px; /* Optional: Rounded corners */
+  background-color: #f9f9f9; /* Optional: Light background color */
+}
+
+/* Bold questions styling */
+.question-group label:first-of-type {
+  font-weight: bold;
+  display: block; /* Ensure question text is on its own line */
+  margin-bottom: 15px; /* Adds spacing below the question text */
+}
+
+/* Align checkboxes and radio buttons properly */
+.question-group input[type="checkbox"],
+.question-group input[type="radio"] {
+  vertical-align: middle; /* Aligns inputs with the middle of the text */
+  margin: 0 10px 0 0; /* Adds spacing to the right of the input */
+  position: static; /* Removes any relative positioning adjustments */
+}
+
+/* Maintain spacing for checkbox and radio labels */
+.question-group label:not(:first-of-type) {
+  display: inline-block;
+  margin-left: 0; /* Ensure no additional unintended left margin */
+  vertical-align: middle; /* Space between inputs and labels */
+}
+
+.question-group label {
+  line-height: 1.5; /* Ensures consistent alignment with input size */
+}
+
+/* Center the entire content on the page */
+body {
+  display: flex; /* Enables Flexbox on the body */
+  flex-direction: column; /* Stacks elements vertically */
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  min-height: 100vh; /* Ensures full height of the viewport */
+  margin: 0; /* Removes default browser margin */
+  font-family: Arial, sans-serif; /* Optional: Cleaner font styling */
+}
+
+/* Center and style text */
+h1,
+h2,
+p {
+  margin: 10px; /* Adds consistent spacing between elements */
+  text-align: center; /* Ensures text is horizontally centered */
 }
