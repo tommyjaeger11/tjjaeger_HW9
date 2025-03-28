@@ -14,8 +14,8 @@
     <h1>Business Analytics Student Survey</h1>
     <form action="tjjaeger_ty.html" method="POST">
       <!-- First Question -->
-      <div class="question-group">
-        <label for="finishing"><b>I am finishing my:</b></label>
+      <fieldset>
+        <legend><b>I am finishing my:</b></legend>
         <input
           type="radio"
           id="option1"
@@ -23,46 +23,39 @@
           value="option1"
           required
         />
-        <label for="option1">First year at Iowa</label>
+        <label for="option1">First year at Iowa</label><br />
         <input type="radio" id="option2" name="finishing" value="option2" />
-        <label for="option2">Second year at Iowa</label>
+        <label for="option2">Second year at Iowa</label><br />
         <input type="radio" id="option3" name="finishing" value="option3" />
-        <label for="option3">Third year at Iowa</label>
+        <label for="option3">Third year at Iowa</label><br />
         <input type="radio" id="option4" name="finishing" value="option4" />
-        <label for="option4">Fourth year at Iowa</label>
-        <input
-          type="radio"
-          id="option5"
-          name="finishing"
-          value="option5"
-        /><label for="option5">Fifth or more year(s) at Iowa</label>
-      </div>
+        <label for="option4">Fourth year at Iowa</label><br />
+        <input type="radio" id="option5" name="finishing" value="option5" />
+        <label for="option5">Fifth or more year(s) at Iowa</label>
+      </fieldset>
 
       <!-- Second Question -->
-      <div class="question-group">
-        <label for="choices"><b>Select all that apply:</b></label>
+      <fieldset>
+        <legend><b>Select all that apply:</b></legend>
         <input type="checkbox" id="check1" name="choices" value="choice1" />
-        <label for="check1">Choice 1</label>
+        <label for="check1">Information Systems</label><br />
         <input type="checkbox" id="check2" name="choices" value="choice2" />
-        <label for="check2">Choice 2</label>
+        <label for="check2">Operations</label><br />
         <input type="checkbox" id="check3" name="choices" value="choice3" />
-        <label for="check3">Choice 3</label>
+        <label for="check3">Foundations of BA</label><br />
         <input type="checkbox" id="check4" name="choices" value="choice4" />
-        <label for="check4">Choice 4</label>
+        <label for="check4">Comp Think</label><br />
         <input type="checkbox" id="check5" name="choices" value="choice5" />
-        <label for="check5">Choice 5</label>
-        <input
-          type="checkbox"
-          id="check6"
-          name="choices"
-          value="choice6"
-        /><label for="check6">Choice 6</label>
+        <label for="check5">DB Management</label><br />
+        <input type="checkbox" id="check6" name="choices" value="choice6" />
+        <label for="check6">Wrangling</label><br />
         <input type="checkbox" id="check7" name="choices" value="choice7" />
-        <label for="check7">Choice 7</label>
+        <label for="check7">Mining</label><br />
         <input type="checkbox" id="check8" name="choices" value="choice8" />
-        <label for="check8">Choice 8</label>
-      </div>
+        <label for="check8">BAIs Capstone</label>
+      </fieldset>
 
+      <!-- Bottom Section -->
       <div class="bottom-section">
         <p>Page 2 of 2</p>
       </div>
