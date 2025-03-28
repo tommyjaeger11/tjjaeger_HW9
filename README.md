@@ -1,3 +1,11 @@
 # tjjaeger_HW9
 
 form creation
+
+This is a form for the Tippe college of Business and Analytics department to help better their program.
+
+A best practice is ensuring accessibility for all users, including those with disabilities. This includes using semantic HTML elements like <label> for form controls and ensuring form fields have associated labels for screen readers. Providing clear instructions and error messages helps users with cognitive or visual impairments to interact with the form. Moreover, making the form responsive ensures that it works across different devices and screen sizes, which is vital for accessibility on mobile devices.
+
+For my assignment, I followed these best practices by ensuring that the form had clear and concise labels, used the appropriate input types for better data entry, and implemented error handling with informative messages. I also ensured that the form was accessible by associating labels with form controls and using semantic HTML tags. Additionally, I made sure the form was responsive, adapting its layout to work on both desktop and mobile devices. This helped make the form user-friendly, accessible, and functional across different platforms.
+
+To ensure my form is accessible to all users, I focused on providing clear and meaningful labels for each input field, ensuring that these labels are associated with their respective form controls using the for attribute. This is especially important for users who rely on screen readers, as it allows them to easily understand which field they are interacting with. Additionally, I made sure that error messages are displayed in a way that is both visible and readable for all users, including those with visual impairments. I used color contrast effectively to ensure readability for those with color blindness or low vision. To improve keyboard accessibility, I made sure that all form fields are navigable using the keyboard alone, allowing users who may not be able to use a mouse to complete the form without difficulty. Lastly, I used ARIA (Accessible Rich Internet Applications) landmarks and roles to help users with assistive technologies navigate the form more easily. These steps collectively ensure that the form can be accessed and used by a wider range of users, including those with disabilities.
